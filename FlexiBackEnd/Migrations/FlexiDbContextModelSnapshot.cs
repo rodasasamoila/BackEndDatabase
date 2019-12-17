@@ -29,6 +29,9 @@ namespace FlexiBackEnd.Migrations
                     b.Property<bool>("accepted")
                         .HasColumnType("bit");
 
+                    b.Property<DateTime>("creationDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("deniedReason")
                         .HasColumnType("nvarchar(max)");
 

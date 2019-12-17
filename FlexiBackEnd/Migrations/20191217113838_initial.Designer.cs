@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlexiBackEnd.Migrations
 {
     [DbContext(typeof(FlexiDbContext))]
-    [Migration("20191211094039_initial")]
+    [Migration("20191217113838_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,6 +30,9 @@ namespace FlexiBackEnd.Migrations
 
                     b.Property<bool>("accepted")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime>("creationDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("deniedReason")
                         .HasColumnType("nvarchar(max)");

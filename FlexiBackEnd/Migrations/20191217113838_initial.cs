@@ -17,6 +17,7 @@ namespace FlexiBackEnd.Migrations
                     deniedReason = table.Column<string>(nullable: true),
                     startHour = table.Column<int>(nullable: false),
                     endHour = table.Column<int>(nullable: false),
+                    creationDate = table.Column<DateTime>(nullable: false),
                     exceptionDate = table.Column<DateTime>(nullable: false),
                     requestType = table.Column<string>(nullable: true)
                 },
