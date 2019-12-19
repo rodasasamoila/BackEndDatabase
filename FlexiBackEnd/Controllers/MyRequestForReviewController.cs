@@ -14,7 +14,10 @@ namespace FlexiBackEnd.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok();
+            RequestForReview requestForReview = new RequestForReview { Id = 2, RequestType = "Schedule" };
+            List<RequestForReview> list = new List<RequestForReview>();
+            list.Add(requestForReview);
+            return Ok(list);
         }
         [HttpGet("{id}")]
         public IActionResult GetById()
