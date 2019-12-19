@@ -18,7 +18,7 @@ namespace FlexiBackEnd.Controllers
         public IActionResult Get()
         {
             IQueryable<Request> query = _flexi.Requests;
-            query.OrderByDescending(c => c.requestId);
+            query.OrderByDescending(c => c.RequestId);
             Request[] requests = query.ToArray();
             return Ok(requests);
 
@@ -35,7 +35,7 @@ namespace FlexiBackEnd.Controllers
         {
             IQueryable<Request> query = _flexi.Requests;
             Request request = query.First(
-                r => r.requestId == id
+                r => r.RequestId == id
                 );
             _flexi.Remove(request);
             _flexi.SaveChanges();
