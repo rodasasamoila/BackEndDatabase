@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Web.Http.Cors;
 namespace FlexiBackEnd.Controllers
 {
     [Route("api/{controller}")]
     [ApiController]
-    [EnableCors(origins: "https://localhost:4200",headers:"*",methods:"*")]
     public class MyRequestController : Controller
     {
         private readonly FlexiDbContext _flexi;
@@ -16,7 +14,6 @@ namespace FlexiBackEnd.Controllers
         {
             _flexi = flexi;
         }
-        //IActionResult la toate
         [HttpGet]
         public IActionResult Get()
         {
@@ -24,10 +21,10 @@ namespace FlexiBackEnd.Controllers
             query.OrderByDescending(c => c.requestId);
             Request[] requests = query.ToArray();
             return Ok(requests);
-            
+
         }
         [HttpGet("{id}")]
-        public Request GetById(int Requestid)
+        public IActionResult GetById(int Requestid)
         {
             IQueryable<Request> query = _flexi.Requests;
 
@@ -45,10 +42,11 @@ namespace FlexiBackEnd.Controllers
             return Ok();
         }
         [HttpPost]
-        public void Post(Request request)
+        public IActionResult Post(Request request)
         {
             _flexi.Add(request);
             _flexi.SaveChanges();
+            return Ok();
         }
         [HttpPut]
         public void Put(Request request)
