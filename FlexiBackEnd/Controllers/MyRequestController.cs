@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Cors;
 using Microsoft.AspNetCore.Mvc;
 namespace FlexiBackEnd.Controllers
 {
+    
     [Route("api/{controller}")]
     [ApiController]
     public class MyRequestController : Controller
@@ -41,6 +43,7 @@ namespace FlexiBackEnd.Controllers
             _flexi.SaveChanges();
             return Ok();
         }
+
         [HttpPost]
         public IActionResult Post(Request request)
         {

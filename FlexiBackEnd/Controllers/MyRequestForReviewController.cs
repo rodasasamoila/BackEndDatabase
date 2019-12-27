@@ -25,7 +25,7 @@ namespace FlexiBackEnd.Controllers
             return Ok();
         }
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(int Id)
         {
             return Ok();
         }
