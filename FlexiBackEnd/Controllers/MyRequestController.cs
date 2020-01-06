@@ -19,9 +19,74 @@ namespace FlexiBackEnd.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            IQueryable<Request> query = _flexi.Requests;
-            query.OrderByDescending(c => c.RequestId);
-            Request[] requests = query.ToArray();
+            List<Request> requests = new List<Request>();
+            Request request = new Request{ Accepted = true,CreationDate= new DateTime(),DeniedReason="",EndHour=18,StartHour=9,ExceptionDate
+            =new DateTime(),RequestType="Schedule"};
+            Request request1 = new Request
+            {
+                Accepted = false,
+                CreationDate = new DateTime(),
+                DeniedReason = "",
+                EndHour = 18,
+                StartHour = 9,
+                ExceptionDate
+           = new DateTime(),
+                RequestType = "Schedule"
+            };
+            Request request3 = new Request
+            {
+                Accepted = null,
+                CreationDate = new DateTime(),
+                DeniedReason = "",
+                EndHour = 18,
+                StartHour = 9,
+                ExceptionDate
+        = new DateTime(),
+                RequestType = "Schedule"
+            };
+            Request request4 = new Request
+            {
+                Accepted = true,
+                CreationDate = new DateTime(),
+                DeniedReason = "",
+                EndHour = 18,
+                StartHour = 9,
+                ExceptionDate
+          = new DateTime(),
+                RequestType = "ExceptionFromSchedule"
+            };
+            Request request5 = new Request
+            {
+                Accepted = false,
+                CreationDate = new DateTime(),
+                DeniedReason = "",
+                EndHour = 18,
+                StartHour = 9,
+                ExceptionDate
+          = new DateTime(),
+                RequestType = "ExceptionFromSchedule"
+            };
+            Request request6 = new Request
+            {
+                Accepted = null,
+                CreationDate = new DateTime(),
+                DeniedReason = "",
+                EndHour = 18,
+                StartHour = 9,
+                ExceptionDate
+          = new DateTime(),
+                RequestType = "ExceptionFromSchedule"
+            };
+           
+            requests.Add(request);
+            requests.Add(request1);
+            requests.Add(request3);
+            requests.Add(request4);
+            requests.Add(request5);
+            requests.Add(request6);
+            //  IQueryable<Request> query = _flexi.Requests;
+            //   query.OrderByDescending(c => c.RequestId);
+            //  Request[] requests = query.ToArray();
             return Ok(requests);
 
         }
@@ -47,6 +112,7 @@ namespace FlexiBackEnd.Controllers
         [HttpPost]
         public IActionResult Post(Request request)
         {
+          
             _flexi.Add(request);
             _flexi.SaveChanges();
             return Ok();

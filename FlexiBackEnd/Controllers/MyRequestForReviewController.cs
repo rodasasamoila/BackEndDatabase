@@ -32,7 +32,9 @@ namespace FlexiBackEnd.Controllers
         [HttpPost]
         public IActionResult Post(RequestForReview RequestForReview )
         {
-            return Ok();
+            List<RequestForReview> list = new List<RequestForReview>();
+            list.Add(RequestForReview);
+            return Ok(list);
         }
         [HttpPut]
         public IActionResult Put(RequestForReview RequestForReview)
