@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexiBackEnd", "FlexiBackEnd\FlexiBackEnd.csproj", "{2AFB7005-87AA-4BC7-85B7-CA2A9DFF3385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexiBackEnd", "FlexiBackEnd\FlexiBackEnd.csproj", "{2AFB7005-87AA-4BC7-85B7-CA2A9DFF3385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{D6C2AB86-169B-4CF5-947A-CF70DE262F00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2AFB7005-87AA-4BC7-85B7-CA2A9DFF3385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AFB7005-87AA-4BC7-85B7-CA2A9DFF3385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AFB7005-87AA-4BC7-85B7-CA2A9DFF3385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C2AB86-169B-4CF5-947A-CF70DE262F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C2AB86-169B-4CF5-947A-CF70DE262F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C2AB86-169B-4CF5-947A-CF70DE262F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C2AB86-169B-4CF5-947A-CF70DE262F00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

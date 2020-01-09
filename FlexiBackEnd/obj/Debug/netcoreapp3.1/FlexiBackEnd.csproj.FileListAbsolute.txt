@@ -2,7 +2,6 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\FlexiBackEnd.exe
-C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.csprojAssemblyReference.cache
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\staticwebassets\FlexiBackEnd.StaticWebAssets.Manifest.cache
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\staticwebassets\FlexiBackEnd.StaticWebAssets.xml
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.AssemblyInfoInputs.cache
@@ -115,3 +114,6 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\System.Web.Http.Cors.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.csprojAssemblyReference.cache
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
