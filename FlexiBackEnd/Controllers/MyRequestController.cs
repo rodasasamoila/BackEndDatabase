@@ -33,10 +33,10 @@ namespace FlexiBackEnd.Controllers
             return null;
         }
 
-        [HttpDelete]
-        public IActionResult Delete(Request request)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
         {
-
+            RequestContainer.Instance.DeleteRequest(id);
            
             return Ok();
         }
@@ -45,8 +45,6 @@ namespace FlexiBackEnd.Controllers
         public IActionResult Post(Request request)
         {
             RequestContainer.Instance.AddRequest(request);
-
-
             return Ok();
         }
 

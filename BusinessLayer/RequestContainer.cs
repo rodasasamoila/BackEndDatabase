@@ -9,6 +9,7 @@ namespace BusinessLayer
     {
 
         List<Request> requestsList = new List<Request>();
+       
 
         private RequestContainer()
         {
@@ -33,14 +34,18 @@ namespace BusinessLayer
 
         public void AddRequest(Request request)
         {
+            
             requestsList.Add(request);
-
         }
 
         public List<Request> GetRequests()
         {
-          
             return requestsList;
+        }
+        
+        public void DeleteRequest(int id)
+        {
+            requestsList.Remove(requestsList.Find(r => r.RequestId == id));
         }
 
         class RequestBuilder
@@ -56,7 +61,7 @@ namespace BusinessLayer
                 _request.DeniedReason = " ";
                 _request.EndHour = 18;
                 _request.StartHour = 9;
-
+                
             }
 
             public RequestBuilder WithAccepted(bool? accepted)
