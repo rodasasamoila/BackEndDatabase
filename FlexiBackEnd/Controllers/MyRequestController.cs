@@ -1,5 +1,8 @@
 ﻿using BusinessLayer;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+
 namespace FlexiBackEnd.Controllers
 {
 
@@ -7,17 +10,17 @@ namespace FlexiBackEnd.Controllers
     [ApiController]
     public class MyRequestController : Controller
     {
+        private readonly IContainer _container;
 
-        public MyRequestController()
+        public MyRequestController(IContainer container)
         {
-
+            _container = container;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-           
-            return Ok(RequestContainer.Instance.GetRequests());
+            return Ok(_container.GetRequests());
         }
 
         [HttpGet("{id}")]
@@ -30,7 +33,7 @@ namespace FlexiBackEnd.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            RequestContainer.Instance.DeleteRequest(id);
+            _container.DeleteRequest(id);
            
             return Ok();
         }
@@ -38,7 +41,7 @@ namespace FlexiBackEnd.Controllers
         [HttpPost]
         public IActionResult Post(Request request)
         {
-            RequestContainer.Instance.AddRequest(request);
+            _container.AddRequest(request);
             return Ok();
         }
 

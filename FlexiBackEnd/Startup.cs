@@ -35,7 +35,7 @@ namespace FlexiBackEnd
                        .AllowAnyHeader();
             }));
             // services.AddSingleton<RequestContainer>();
-            //services.AddScoped<RequestContainer, RequestContainer>();
+            services.AddSingleton<IContainer, DummyContainer>();
             services.AddControllers();
           
         }

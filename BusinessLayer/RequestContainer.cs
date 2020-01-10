@@ -2,7 +2,7 @@
 
 namespace BusinessLayer
 {
-    interface IContainer
+    public interface IContainer
     {
         
         void AddRequest(Request request);
@@ -41,4 +41,23 @@ namespace BusinessLayer
             requestsList.Remove(requestsList.Find(r => r.RequestId == id));
         }
     };
+    public class DummyContainer:IContainer
+    {
+        List<Request> requestsList = new List<Request>();
+        public void AddRequest(Request request)
+        {
+            request.StartHour = 123;
+            requestsList.Add(request);
+        }
+
+        public List<Request> GetRequests()
+        {
+            return requestsList;
+        }
+
+        public void DeleteRequest(int id)
+        {
+            requestsList.Remove(requestsList.Find(r => r.RequestId == id));
+        }
+    }
 }
