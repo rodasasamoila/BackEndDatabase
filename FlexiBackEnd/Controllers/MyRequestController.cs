@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web.Http.Cors;
-using BusinessLayer;
+﻿using BusinessLayer;
 using Microsoft.AspNetCore.Mvc;
 namespace FlexiBackEnd.Controllers
 {
@@ -13,11 +8,9 @@ namespace FlexiBackEnd.Controllers
     public class MyRequestController : Controller
     {
 
-        private Guid _controllerId;
         public MyRequestController()
         {
 
-            _controllerId = Guid.NewGuid();
         }
 
         [HttpGet]
@@ -28,8 +21,9 @@ namespace FlexiBackEnd.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int Requestid)
+        public IActionResult GetById(int id)
         {
+
             return null;
         }
 
