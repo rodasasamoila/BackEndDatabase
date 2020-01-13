@@ -1,19 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using BusinessLayer;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace BusinessLayer
+namespace PersistanceLayer
 {
     public interface IContainer
     {
-        
+
         void AddRequest(Request request);
-        
+
         List<Request> GetRequests();
 
         void DeleteRequest(int id);
 
     }
 
-    public  class RequestContainer : IContainer
+    public class RequestContainer : IContainer
     {
 
         List<Request> requestsList = new List<Request>();
@@ -23,8 +26,6 @@ namespace BusinessLayer
         {
 
         }
-
-        
 
         public void AddRequest(Request request)
         {
@@ -41,23 +42,4 @@ namespace BusinessLayer
             requestsList.Remove(requestsList.Find(r => r.RequestId == id));
         }
     };
-    public class DummyContainer:IContainer
-    {
-        List<Request> requestsList = new List<Request>();
-        public void AddRequest(Request request)
-        {
-            request.StartHour = 123;
-            requestsList.Add(request);
-        }
-
-        public List<Request> GetRequests()
-        {
-            return requestsList;
-        }
-
-        public void DeleteRequest(int id)
-        {
-            requestsList.Remove(requestsList.Find(r => r.RequestId == id));
-        }
-    }
 }

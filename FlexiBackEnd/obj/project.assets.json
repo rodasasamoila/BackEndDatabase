@@ -2519,6 +2519,19 @@
         "runtime": {
           "bin/placeholder/BusinessLayer.dll": {}
         }
+      },
+      "PersistanceLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "BusinessLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersistanceLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersistanceLayer.dll": {}
+        }
       }
     }
   },
@@ -8230,6 +8243,11 @@
       "type": "project",
       "path": "../BusinessLayer/BusinessLayer.csproj",
       "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+    },
+    "PersistanceLayer/1.0.0": {
+      "type": "project",
+      "path": "../PersistanceLayer/PersistanceLayer.csproj",
+      "msbuildProject": "../PersistanceLayer/PersistanceLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8239,7 +8257,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
       "Microsoft.Extensions.Logging.Debug >= 3.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0",
+      "PersistanceLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8270,6 +8289,9 @@
           "projectReferences": {
             "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj": {
               "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj"
+            },
+            "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\PersistanceLayer\\PersistanceLayer.csproj": {
+              "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\PersistanceLayer\\PersistanceLayer.csproj"
             }
           }
         }
