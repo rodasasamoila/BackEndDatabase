@@ -19,7 +19,7 @@ namespace FlexiBackEnd.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_container.GetRequests());
+            return Ok(_container.GetAllMyRequests());
         }
 
         [HttpGet("{id}")]
@@ -40,7 +40,7 @@ namespace FlexiBackEnd.Controllers
         [HttpPost]
         public IActionResult Post(Request request)
         {
-            _container.AddRequest(request);
+            _container.SaveScheduleRequest(request);
             return Ok();
         }
 

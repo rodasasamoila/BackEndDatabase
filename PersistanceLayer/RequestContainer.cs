@@ -1,16 +1,14 @@
 ﻿using BusinessLayer;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace PersistanceLayer
 {
     public interface IContainer
     {
 
-        void AddRequest(Request request);
+        void SaveScheduleRequest(Request request);
 
-        List<Request> GetRequests();
+        List<Request> GetAllMyRequests();
 
         void DeleteRequest(int id);
 
@@ -27,12 +25,12 @@ namespace PersistanceLayer
 
         }
 
-        public void AddRequest(Request request)
+        public void SaveScheduleRequest(Request request)
         {
             requestsList.Add(request);
         }
 
-        public List<Request> GetRequests()
+        public List<Request> GetAllMyRequests()
         {
             return requestsList;
         }
