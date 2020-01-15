@@ -4,11 +4,6 @@ using System.Text;
 
 namespace BusinessLayer
 {
-    public interface IValidate
-    {
-        bool CheckWorkHours(Request request);
-        bool CheckDate(Request request);
-    }
 
     public class ValidateData : IValidate
     {
