@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using BusinessLayer;
 using Microsoft.AspNetCore.Mvc;
+using PersistanceLayer;
 
 namespace FlexiBackEnd.Controllers
 {
@@ -8,13 +9,16 @@ namespace FlexiBackEnd.Controllers
     [ApiController]
     public class MyRequestForReviewController : Controller
     {
+        private readonly IContainer _container;
+        public MyRequestForReviewController(IContainer container)
+        {
+            _container = container;
+        }
         [HttpGet]
         public IActionResult Get()
         {
-            RequestForReview requestForReview = new RequestForReview { Id = 2, RequestType = "Schedule" };
-            List<RequestForReview> list = new List<RequestForReview>();
-            list.Add(requestForReview);
-            return Ok(list);
+            
+            return Ok(_container.GetRequestsForReview());
         }
 
         [HttpGet("{id}")]

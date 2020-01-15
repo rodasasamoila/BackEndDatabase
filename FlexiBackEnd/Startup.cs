@@ -1,10 +1,11 @@
+
 using BusinessLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using PersistanceLayer;
 
 namespace FlexiBackEnd
 {
@@ -28,6 +29,7 @@ namespace FlexiBackEnd
                        .AllowAnyHeader();
             }));
             services.AddSingleton<IContainer, RequestContainer>();
+            services.AddSingleton<IValidate, ValidateData>();
             services.AddControllers();
 
         }
