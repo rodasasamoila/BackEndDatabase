@@ -1,0 +1,6 @@
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\bin\Debug\netcoreapp3.1\Requests.Tests.exe
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\obj\Debug\netcoreapp3.1\Requests.Tests.csprojAssemblyReference.cache
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\obj\Debug\netcoreapp3.1\Requests.Tests.AssemblyInfoInputs.cache
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\obj\Debug\netcoreapp3.1\Requests.Tests.AssemblyInfo.cs
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\Requests.Tests\obj\Debug\netcoreapp3.1\Requests.Tests.csproj.CopyComplete

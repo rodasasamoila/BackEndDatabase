@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistanceLayer", "PersistanceLayer\PersistanceLayer.csproj", "{89E3C975-8926-4B49-A1C0-66C6EC987FA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer.Tests", "Requests.Tests\BusinessLayer.Tests.csproj", "{2CFFAA45-2257-4485-86BF-881309DF5DFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{89E3C975-8926-4B49-A1C0-66C6EC987FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89E3C975-8926-4B49-A1C0-66C6EC987FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89E3C975-8926-4B49-A1C0-66C6EC987FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFFAA45-2257-4485-86BF-881309DF5DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFFAA45-2257-4485-86BF-881309DF5DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFFAA45-2257-4485-86BF-881309DF5DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFFAA45-2257-4485-86BF-881309DF5DFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

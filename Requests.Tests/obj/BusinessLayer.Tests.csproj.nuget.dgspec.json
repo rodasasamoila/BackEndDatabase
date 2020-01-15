@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\Requests.Tests\\BusinessLayer.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\Requests.Tests\\BusinessLayer.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj",
-        "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\Requests.Tests\\BusinessLayer.Tests.csproj",
+        "projectName": "BusinessLayer.Tests",
+        "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\Requests.Tests\\BusinessLayer.Tests.csproj",
         "packagesPath": "C:\\Users\\rsamoila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\Requests.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rsamoila\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.12.0, )"

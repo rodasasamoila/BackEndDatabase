@@ -27,7 +27,7 @@ namespace BusinessLayer
         public bool CheckDate(Request request)
         {
             
-            int result = DateTime.Compare(request.ExceptionDate, DateTime.Now.AddHours(-5));
+            int result = DateTime.Compare(request.ExceptionDate, DateTime.Now.AddHours(-1));
             if (result > 0)
             {
                 return true;

@@ -108,7 +108,6 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.csprojAssemblyReference.cache
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
