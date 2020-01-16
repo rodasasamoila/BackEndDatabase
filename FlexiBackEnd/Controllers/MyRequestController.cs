@@ -10,16 +10,19 @@ namespace FlexiBackEnd.Controllers
     public class MyRequestController : Controller
     {
         private readonly IContainer _container;
-
-        public MyRequestController(IContainer container)
+        private readonly IValidate _validate;
+        private readonly IScheduleRequestAdder _scheduleRequestAdder;
+        public MyRequestController(IContainer container, IValidate validate, IScheduleRequestAdder scheduleRequestAdder)
         {
+            _scheduleRequestAdder = scheduleRequestAdder;
+            _validate = validate;
             _container = container;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            
+
             return Ok(_container.GetAllMyRequests());
         }
 
@@ -34,15 +37,13 @@ namespace FlexiBackEnd.Controllers
         public IActionResult Delete(int id)
         {
             _container.DeleteRequest(id);
-
             return Ok();
         }
 
         [HttpPost]
         public IActionResult Post(Request request)
         {
-
-            _container.SaveScheduleRequest(request);
+            _scheduleRequestAdder.Add(request);
             return Ok();
         }
 

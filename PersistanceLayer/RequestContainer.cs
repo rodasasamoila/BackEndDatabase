@@ -8,19 +8,16 @@ namespace PersistanceLayer
     {
 
         List<Request> requestsList = new List<Request>();
-        private readonly IValidate _valid;
 
-        public RequestContainer(IValidate valid)
+
+        public RequestContainer()
         {
-            _valid = valid;
+
         }
 
         public void SaveScheduleRequest(Request request)
         {
-            
-            if(_valid.CheckWorkHours(request)==true && _valid.CheckDate(request)==true )
             requestsList.Add(request);
-           
         }
 
         public List<Request> GetAllMyRequests()

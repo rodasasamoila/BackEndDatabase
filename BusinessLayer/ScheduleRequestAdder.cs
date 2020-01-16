@@ -1,10 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using PersistanceLayer;
 
 namespace BusinessLayer
 {
-    class ScheduleRequestAdder
+    public class ScheduleRequestAdder :IScheduleRequestAdder
     {
+        private readonly IValidate _validate;
+        private readonly IContainer _container;
+        public ScheduleRequestAdder(IContainer container,IValidate validate)
+        {
+            _validate = validate;
+            _container = container;
+        }
+        public void Add(Request request)
+        {
+            if(_validate.CheckWorkHours(request)==true && _validate.CheckDate(request)==true)
+            _container.SaveScheduleRequest(request);
+            
+        }
     }
 }

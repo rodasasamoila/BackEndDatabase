@@ -30,6 +30,7 @@ namespace FlexiBackEnd
             }));
             services.AddSingleton<IContainer, RequestContainer>();
             services.AddSingleton<IValidate, ValidateData>();
+            services.AddSingleton<IScheduleRequestAdder,ScheduleRequestAdder>();
             services.AddControllers();
 
         }
