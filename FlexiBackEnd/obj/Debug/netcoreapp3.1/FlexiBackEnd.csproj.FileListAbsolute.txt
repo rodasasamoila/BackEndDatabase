@@ -114,8 +114,10 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\PersistanceLayer.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\PersistanceLayer.pdb
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\nunit.framework.dll
-C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\nunit.engine.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\FlexiBackEnd\obj\Debug\netcoreapp3.1\FlexiBackEnd.MvcApplicationPartsAssemblyInfo.cache

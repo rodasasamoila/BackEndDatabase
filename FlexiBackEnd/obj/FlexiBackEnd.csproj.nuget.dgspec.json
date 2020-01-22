@@ -26,11 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\PersistanceLayer\\PersistanceLayer.csproj": {
-                "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\PersistanceLayer\\PersistanceLayer.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -42,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.12.0, )"
@@ -113,6 +113,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -184,7 +188,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\rsamoila\\source\\repos\\FlexiBackEnd\\BusinessLayer\\BusinessLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

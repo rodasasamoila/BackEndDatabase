@@ -1,5 +1,9 @@
 
+using AutoMapper;
 using BusinessLayer;
+using BusinessLayer.ScheduleRequest;
+using BusinessLayer.ScheduleRequest.Abstract;
+using BusinessLayer.ScheduleRequest.Validator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,9 +32,19 @@ namespace FlexiBackEnd
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
-            services.AddSingleton<IContainer, RequestContainer>();
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+            services.AddSingleton<IScheduleRequestPersister, RequestContainer>();
+            services.AddSingleton<ISupervisorEmailSenderHandler, SupervisorEmailSenderCommandHandler>();
             services.AddSingleton<IValidate, ValidateData>();
-            services.AddSingleton<IScheduleRequestAdder,ScheduleRequestAdder>();
+            services.AddSingleton<IScheduleRequestAdder, ScheduleRequestAdder>();
+            services.AddSingleton<IScheduleLimitsQueryHandler, ScheduleLimitsQueryHandler>();
+            services.AddSingleton<ICurrentUserIdQueryHandler, CurrentUserQueryHandler>();
+            services.AddSingleton<ISupervisorListQueryHandler, SupervisorQueryHandler>();
             services.AddControllers();
 
         }

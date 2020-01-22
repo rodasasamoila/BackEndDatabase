@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.ScheduleRequest.Commands;
+using System;
 
 
 namespace BusinessLayer
@@ -6,16 +7,17 @@ namespace BusinessLayer
 
     public class ValidateData : IValidate
     {
-
-        public ValidateData()
+        private readonly IScheduleLimitsQueryHandler _scheduleLimitsQuery;
+        public ValidateData(IScheduleLimitsQueryHandler scheduleLimitsQuery)
         {
-
+            _scheduleLimitsQuery = scheduleLimitsQuery;
 
         }
-        public bool CheckWorkHours(Request request)
+        public bool CheckWorkHours(AddScheduleRequestCommand request)
         {
 
-            if (request.StartHour < 7 || request.EndHour > 22 || request.StartHour > 13 || request.EndHour < 16)
+            if (request.StartHour < _scheduleLimitsQuery.Handle(null).StartHourMinimum || request.EndHour > _scheduleLimitsQuery.Handle(null).EndHourMaximum ||
+                request.StartHour > _scheduleLimitsQuery.Handle(null).StartHourMaximum || request.EndHour < _scheduleLimitsQuery.Handle(null).StartHourMinimum)
             {
                 throw new Exception("Schedule starting hours or ending hours are not in the correct interval");
             }
@@ -25,7 +27,7 @@ namespace BusinessLayer
             }
             return true;
         }
-        public bool CheckDate(Request request)
+        public bool CheckDate(AddScheduleRequestCommand request)
         {
 
             int result = DateTime.Compare(request.ExceptionDate, DateTime.Now.AddHours(-5));

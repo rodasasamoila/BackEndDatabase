@@ -6,9 +6,6 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\obj\Debug\netcoreapp3.
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csprojAssemblyReference.cache
-C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\bin\Debug\netcoreapp3.1\PersistanceLayer.dll
-C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\bin\Debug\netcoreapp3.1\PersistanceLayer.pdb
-C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CopyComplete
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\rsamoila\source\repos\FlexiBackEnd\BusinessLayer\bin\Debug\netcoreapp3.1\nunit.engine.dll

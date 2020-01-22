@@ -6,3 +6,10 @@ C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreap
 C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\PersistanceLayer.pdb
 C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\obj\Debug\netcoreapp3.1\PersistanceLayer.dll
 C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\obj\Debug\netcoreapp3.1\PersistanceLayer.pdb
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\nunit.engine.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\rsamoila\source\repos\FlexiBackEnd\PersistanceLayer\obj\Debug\netcoreapp3.1\PersistanceLayer.csproj.CopyComplete

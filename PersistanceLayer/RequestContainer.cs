@@ -1,13 +1,14 @@
 ﻿using BusinessLayer;
+using BusinessLayer.ScheduleRequest.Commands;
 using System.Collections.Generic;
 
 namespace PersistanceLayer
 {
 
-    public class RequestContainer : IContainer
+    public class RequestContainer : IScheduleRequestPersister
     {
 
-        List<Request> requestsList = new List<Request>();
+        List<AddScheduleRequestCommand> requestsList = new List<AddScheduleRequestCommand>();
 
 
         public RequestContainer()
@@ -15,24 +16,9 @@ namespace PersistanceLayer
 
         }
 
-        public void SaveScheduleRequest(Request request)
+        public void SaveScheduleRequest(AddScheduleRequestCommand request)
         {
             requestsList.Add(request);
-        }
-
-        public List<Request> GetAllMyRequests()
-        {
-            return requestsList;
-        }
-
-        public void DeleteRequest(int id)
-        {
-            requestsList.Remove(requestsList.Find(r => r.RequestId == id));
-        }
-
-        public List<Request> GetRequestsForReview()
-        {
-            return requestsList.FindAll(r=>r.Accepted==null);
         }
     };
 }

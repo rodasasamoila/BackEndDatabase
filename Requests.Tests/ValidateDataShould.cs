@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using BusinessLayer.ScheduleRequest.Commands;
+using BusinessLayer.ScheduleRequest.Validator;
+using NUnit.Framework;
 using System;
 
 namespace BusinessLayer.Tests
@@ -7,17 +9,17 @@ namespace BusinessLayer.Tests
     class ValidateDataShould
     {
         private ValidateData validate;
-        private Request request;
-
+        private AddScheduleRequestCommand request;
+        private ScheduleLimitsQueryHandler scheduleLimits;
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
-            validate = new ValidateData();
-            request = new Request();
+            scheduleLimits = new ScheduleLimitsQueryHandler();
+            validate = new ValidateData(scheduleLimits);
+            request = new AddScheduleRequestCommand();
             request.StartHour = 8;
             request.EndHour = 17;
-            DateTime ExceptionDate = DateTime.Now;
-            request.ExceptionDate = ExceptionDate;
+            request.ExceptionDate = DateTime.Now;
         }
 
         [Test]
